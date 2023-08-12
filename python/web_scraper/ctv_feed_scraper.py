@@ -83,6 +83,7 @@ def ctv_scrape():
         article_text_list_cleaned[i] = article_text_list_cleaned[i].replace(
             "\r\n\t", " "
         )
+        article_text_list_cleaned[i] = article_text_list_cleaned[i].replace("\n", " ")
 
     articles = []
     for article_text in article_text_list_cleaned:
