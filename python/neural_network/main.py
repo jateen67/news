@@ -1,4 +1,4 @@
-import news
+import model
 
 
-news.analyze_news("../data/news.csv")
+model.analyze_news("../data/news.csv")
