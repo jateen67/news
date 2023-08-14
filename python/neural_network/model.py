@@ -166,10 +166,11 @@ model.save("./model.h5", save_format="h5")
 
 def analyze_news(path):
     test_reviews = pd.read_csv(path)
-
     test_preprocessed = []
-    for review in test_reviews["Review Text"]:
-        review = preprocess(review)
+
+    for index, row in test_reviews.iterrows():
+        text = row["title"] + row["description"] + row["text"]
+        review = preprocess(text)
         test_preprocessed.append(review)
 
     # tokenising with tokenizer from before
