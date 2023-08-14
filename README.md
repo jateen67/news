@@ -12,7 +12,7 @@ The first step is to gather Canadian news feeds from various outlets, which can 
 
 From the RSS feed, we obtain the news articles' `title`, `description`, `publish date`, and `link` to the full article.
 
-### Scrape each article from the obtained feeds
+### Scrape each article from the obtained feed
 
 Once we obtain our feed of articles, we iterate through the list and use [BeautifulSoup](https://pypi.org/project/beautifulsoup4/) to scrape the `text` of each article in full (using the link mentioned earlier). This is done so that we have more stuff to feed into the neural network, leading to a higher level of certainty as to whether or not a specific article is positive, as opposed to if we just fed the model the article's very short `title` and `description`.
 
