@@ -30,8 +30,7 @@ Once the entire scraping process is done, the file that contains all the article
 
 The model is a recurrent neural network (RNN), meaning...[TO BE CONTINUED]
 
-Running all the cells in `python/neural_network/model.ipynb` will go through the process of determining the score for each article.
-The frontend should then be up-to-date and ready!
+Running all the cells in `python/neural_network/model.ipynb` will go through the process of determining the score for each article. After completing the web scraping process and feeding the resulting articles to the model, the frontend should be up-to-date and ready!
 
 ## Results
 
