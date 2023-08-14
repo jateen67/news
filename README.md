@@ -20,6 +20,8 @@ Once we obtain our feed of articles, we iterate through the list and use [Beauti
 
 Naturally, the `text` of each article will be filled with unwanted characters, like `\n`. Because of this, it gets cleaned so that we can pass it into the model later on without a hitch (and because it looks nicer, obviously).
 
+All the web scraping code is centralized at `python/web_scraper/main.py`, meaning running this file will go through the entire process of obtaining the feed, scraping the articles, etc.
+
 ### Feed cleaned up news articles into model
 
 Once the entire scraping process is done, the file that contains all the articles (`python/data/news.csv`) gets passed to the model, which will in turn evaluate each article's `title`, `description`, and `text` property and generate a score from 0-10. Naturally, since most news is negative, most of the articles are not being evaluated by how positive they are; they're being evaluated based on how much less negative they are compared to the others.
@@ -28,9 +30,12 @@ Once the entire scraping process is done, the file that contains all the article
 
 The model is a recurrent neural network (RNN), meaning...[TO BE CONTINUED]
 
-Running `python/web_scraper/main.py` will go through the process of scraping the articles.
 Running all the cells in `python/neural_network/model.ipynb` will go through the process of determining the score for each article.
 The frontend should then be up-to-date and ready!
+
+## Results
+
+[include graphs, observations, etc.]
 
 ## Data
 
