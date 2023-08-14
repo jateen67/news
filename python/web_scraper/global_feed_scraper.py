@@ -8,7 +8,7 @@ import re
 def global_scrape():
     # BEGINNING OF FEED SCRAPER
 
-    feed = feedparser.parse("https://globalnews.ca/world/feed/")
+    feed = feedparser.parse("https://globalnews.ca/canada/feed/")
 
     feed_list = []
 

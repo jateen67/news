@@ -19,7 +19,7 @@ for news in merged_news:
     ]
     csv_rows.append(row)
 
-with open("../data/news_done.csv", "w", newline="", encoding="utf-8") as csvfile:
+with open("../data/news.csv", "w", newline="", encoding="utf-8") as csvfile:
     csv_writer = csv.writer(csvfile)
     csv_writer.writerow(["title", "description", "published", "link", "text"])
     csv_writer.writerows(csv_rows)

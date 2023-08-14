@@ -9,7 +9,7 @@ def ctv_scrape():
     # BEGINNING OF FEED SCRAPER
 
     feed = feedparser.parse(
-        "https://www.ctvnews.ca/rss/ctvnews-ca-world-public-rss-1.822289"
+        "https://www.ctvnews.ca/rss/ctvnews-ca-canada-public-rss-1.822284"
     )
 
     feed_list = []
