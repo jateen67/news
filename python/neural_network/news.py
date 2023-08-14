@@ -200,6 +200,4 @@ def analyze_news(path):
 
     test_reviews = test_reviews.sort_values(by="rating", ascending=False)
 
-    test_reviews.to_json(
-        "test_reviews.json", orient="records", indent=4, force_ascii=False
-    )
+    test_reviews.to_json("display.json", orient="records", indent=4, force_ascii=False)
