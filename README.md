@@ -2,7 +2,7 @@
 
 This site displays news articles gathered from all over Canada, with the less gloomy ones being displayed at the top. It does this by first gathering articles from various news outlets, then feeding the articles into a neural network that will read them and generate a "positivity" score based on their contents.
 
-The less depressing the news article is, the higher its score will be :D
+The less depressing the news article, the higher its score will be :D
 
 ## How it works
 
@@ -48,7 +48,7 @@ The IMDb review data set used to train this model comes can be found [here](http
 
 The data used to create the embedding layer for the neural network comes from the `glove.6B.zip` folder found [here](https://nlp.stanford.edu/projects/glove/)
 
-**Note**: The word embeddings data file was not copied to this repository, as it is too large :( It should normally be located at `python/neural_network`
+**Note**: The word embeddings data file was not copied to this repository, as it is too large :( It should normally be located in `python/neural_network`
 
 ## Technologies
 
