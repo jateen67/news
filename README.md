@@ -32,11 +32,7 @@ The model is a recurrent neural network (RNN), meaning...[TO BE CONTINUED]
 
 Running all the cells in `python/neural_network/model.ipynb` will go through the process of training the neural network and then feeding it the articles to determine the scores for them.
 
-After completing the entire web scraping process, then training and feeding the model, the frontend should be up-to-date and ready!
-
-## Results
-
-[include graphs, observations, etc.]
+After completing the entire web scraping process, then training and feeding the model, running `npm run dev` in the `root directory` will show you a frontend that is up-to-date and ready!
 
 ## Data
 
