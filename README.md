@@ -1,6 +1,6 @@
 # Positive News Finder Neural Network
 
-![newspic](./assets/newspic.png)
+![newspic](./src/assets/newspic.png)
 
 This site displays news articles gathered from all over Canada, with the less gloomy ones being displayed at the top. It does this by first gathering articles from various news outlets, then feeding the articles into a neural network that will read them and generate a "positivity" score based on their contents.
 
