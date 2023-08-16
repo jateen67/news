@@ -3,39 +3,36 @@ import display from "../python/data/display.json";
 export default function Feed() {
   return (
     <>
-      <div className="top-stories-container">
-        <div className="top-stories-label">
-          <p>TOP STORIES</p>
-        </div>
-        <div className="top-stories">
-          <div className="top-story">
-            <p>title</p>
-            <p>date</p>
-            <p>score</p>
-          </div>
-        </div>
-      </div>
-      <div className="latest-stories-container">
-        <div className="latest-stories-label">
-          <p>LATEST STORIES</p>
-        </div>
-        <div className="latest-stories">
-          <div className="latest-story">
-            <p>title</p>
-            <p>date</p>
-            <p>score</p>
-          </div>
-        </div>
-      </div>
+      <h1 className="title">Positive News Displayer</h1>
+      <p className="description">
+        The less depressing the news article is, the higher its score will be :D
+      </p>
       <div className="articles-container">
         {display.map((article, idx) => {
           return (
             <div key={idx} className="article">
-              <p>{article.title}</p>
-              <p>{article.description}</p>
-              <p>{article.published}</p>
-              <p>{article.link}</p>
-              <p>{article.rating.toFixed(1)}</p>
+              <p style={{ fontWeight: "bold" }}>{article.title}</p>
+              <p style={{ color: "#c4c4c4", overflowY: "auto" }}>
+                {article.description}
+              </p>
+              <div className="info-container">
+                <p className="info-item">{article.rating.toFixed(1)}</p>
+                <a
+                  className="view-link info-item"
+                  href={article.link}
+                  target="_blank"
+                  style={{ fontFamily: "Times New Roman, sans-serif" }}
+                >
+                  View
+                </a>
+                <p className="info-item">
+                  {new Date(article.published).toLocaleDateString("en-US", {
+                    month: "short",
+                    day: "numeric",
+                    year: "numeric",
+                  })}
+                </p>
+              </div>
             </div>
           );
         })}
