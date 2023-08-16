@@ -3,7 +3,6 @@ import display from "../python/data/display.json";
 export default function Feed() {
   return (
     <>
-      <h1 className="title">Positive News Displayer</h1>
       <p className="description">
         The less depressing the news article is, the higher its score will be :D
       </p>
@@ -12,7 +11,10 @@ export default function Feed() {
           return (
             <div key={idx} className="article">
               <p style={{ fontWeight: "bold" }}>{article.title}</p>
-              <p style={{ color: "#c4c4c4", overflowY: "auto" }}>
+              <p
+                className="desc"
+                style={{ color: "#c4c4c4", overflowY: "auto" }}
+              >
                 {article.description}
               </p>
               <div className="info-container">
@@ -21,7 +23,7 @@ export default function Feed() {
                   className="view-link info-item"
                   href={article.link}
                   target="_blank"
-                  style={{ fontFamily: "Times New Roman, sans-serif" }}
+                  style={{ fontFamily: "Josefin Sans, Times, serif" }}
                 >
                   View
                 </a>

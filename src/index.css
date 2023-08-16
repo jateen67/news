@@ -1,6 +1,7 @@
 :root {
   background-color: #242424;
   color: #fff;
+  font-family: "Josefin Sans", "Times New Roman", Times, serif;
 }
 
 ::-webkit-scrollbar {

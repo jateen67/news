@@ -19,6 +19,7 @@ export default function Navbar() {
           </ul>
         </div>
       </nav>
+      <h1 className="title">Positive News Finder</h1>
     </>
   );
 }
