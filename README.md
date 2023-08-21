@@ -26,7 +26,7 @@ Naturally, the `text` of each article will be filled with unwanted characters, l
 
 ### The neural network
 
-This is a **Long Short-Term Memory network** (LSTM), which is specifically designed to capture and learn patterns from sequence data that has long-term dependencies. This makes LSTMs ideal for applications, like processing text; text itself is a form of sequential data, made up of words and phrases, that develops more and more context and dependencies as the text/phrases grow in size. Here's how it's trained:
+This is a **Long Short-Term Memory network** (LSTM), which is specifically designed to capture and learn patterns from sequencial data that has long-term dependencies. This makes LSTMs ideal for applications like processing text; text itself is a form of sequential data, made up of words and phrases, that develops more context as the text/phrase grows in size. Here's how it's trained:
 
 #### Gather extensive training data
 
@@ -38,11 +38,11 @@ Much like with the web scraper, the data obtained is filled with unwanted charac
 
 #### Create word embeddings
 
-Standford's pre-trained word embeddings, called [GloVe](https://nlp.stanford.edu/projects/glove/), was used so that the model can better understand the context and nuance of the text in each review that it's being fed for training (remember the "sequential data" mentioned earlier). In order to understand what word embeddings are and how they work, we need to understand how a neural network gets trained:
+Standford's pre-trained word embeddings, called [GloVe](https://nlp.stanford.edu/projects/glove/), was used so that the model can better understand the context and nuances of the text in each review that it's being fed for training (remember the "sequential data" mentioned earlier). In order to understand what word embeddings are and how they work, we need to understand how a neural network gets trained:
 
 In order for machines to understand, work, and train with text, it needs to be transformed into a numerical format. This is where word embeddings come into play. Word embeddings are a technique used to represent words as dense vectors of real numbers, capturing the semantic relationships between words in a more meaningful way than traditional methods.
 
-Traditional text-to-numerical representation methods, such as one-hot encoding or bag-of-words, treat words as discrete and independent symbols, meaning do not take into account the relationships and meanings that words have in a sentence or context. Word embeddings address this limitation by representing words in a continuous vector space, where the proximity of vectors reflects the semantic similarity between words.
+Traditional text-to-numerical representation methods, such as one-hot encoding or bag-of-words, treat words as discrete and independent symbols, meaning they do not take into account the relationships and meanings that words have in a sentence or context. Word embeddings address this limitation by representing words in a continuous vector space, where the proximity of vectors reflects the semantic similarity between words.
 
 For example, in a word embedding space, words with similar meanings, like "happy" and "joyful," would be closer together, while words with different meanings, like "happy" and "sad," would be farther apart. This property enables word embeddings to capture nuances, associations, and context in text that are vital for tasks like sentiment analysis.
 
