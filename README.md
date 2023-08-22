@@ -62,7 +62,7 @@ All the web scraping code is centralized at `python/web_scraper/main.py`, meanin
 
 Running the cells in `python/neural_network/model.ipynb` will go through the process of training the neural network. Running the final cell (`analyze_news("../data/news.csv")`) will feed the scraped articles to the model, determine the scores for them, then save the result in `python/data/display.json`, which will get displayed by the frontend.
 
-Finally, running `npm run dev` in the root directory will show you a frontend that is up-to-date and ready!
+Finally, running `npm run install` followed by `npm run dev` in the root directory will show you a frontend that is up-to-date and ready!
 
 ## Data
 
